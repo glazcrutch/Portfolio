@@ -41,7 +41,7 @@
       <header class="proj-hero">
         <p class="section-kicker">Hardware</p>
         <h1><span class="gradient-text">FPGA</span> Binary Counter</h1>
-        <p class="lead">A binary counter designed in a hardware description language and implemented on an FPGA board, with the running count displayed on the board's LEDs.</p>
+        <p class="lead">A binary counter designed in Verilog and implemented on an Tang Nano 20k, with the running count displayed on the board's 6 LEDs.</p>
         <ul class="tags"><li>FPGA</li><li>Verilog</li><li>Digital Logic</li></ul>
       </header>
 
@@ -62,10 +62,9 @@
         <article class="card reveal">
           <h3>What I built</h3>
           <ul class="check-list">
-            <li>A counter module described in a hardware description language</li>
+            <li>A counter module described in Verilog</li>
             <li>A clock-division stage so the count is slow enough to see</li>
             <li>Pin constraints mapping count bits to the board's LEDs</li>
-            <li>Simulation of the design before programming the board</li>
           </ul>
         </article>
 
@@ -74,8 +73,8 @@
           <ol class="step-list">
             <li>The board clock drives a counter register.</li>
             <li>A divider slows the clock so each increment is visible.</li>
-            <li>Each bit of the register is wired to one LED.</li>
-            <li>The register wraps around to zero after its maximum value.</li>
+            <li>Each bit of the register is wired to one of the 6 LEDs on the board.</li>
+            <li>The register wraps around to zero after its maximum value of 63, so the count repeats indefinitely.</li>
           </ol>
         </article>
 
