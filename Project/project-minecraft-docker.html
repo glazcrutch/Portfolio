@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft Docker | Dorathan Lee</title>
+  <meta name="description" content="A containerised Minecraft server deployed with Docker, with persistent world data and a repeatable setup." />
+  <meta name="theme-color" content="#f8fafc" />
+  <script src="../theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="../index.html#home" class="logo" aria-label="Home">
+        <span class="logo-mark">&lt;/&gt;</span> Dorathan Lee
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../settings.html" class="nav-link">Settings</a>
+        <a href="../index.html#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="project-page">
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">← All projects</a>
+
+      <header class="proj-hero">
+        <p class="section-kicker">Cloud &amp; DevOps</p>
+        <h1>Minecraft <span class="gradient-text">Docker</span></h1>
+        <p class="lead">A containerised Minecraft server deployed with Docker, with persistent world data and a repeatable setup that runs the same on any host.</p>
+        <ul class="tags"><li>Docker</li><li>Linux</li><li>Networking</li></ul>
+      </header>
+
+      <div class="proj-banner thumb-2" aria-hidden="true"><span>🐳</span></div>
+
+      <dl class="meta-grid">
+        <div class="meta-item"><dt>Category</dt><dd>Cloud &amp; DevOps</dd></div>
+        <div class="meta-item"><dt>Focus</dt><dd>Containers &amp; deployment</dd></div>
+        <div class="meta-item"><dt>Role</dt><dd>Setup &amp; administration</dd></div>
+      </dl>
+
+      <div class="detail-grid">
+        <article class="card reveal wide">
+          <h3>Overview</h3>
+          <p>Running a game server by hand means installing the right Java version, remembering the launch flags and hoping nothing breaks when you move machines. This project packages the whole server in a Docker container so it can be started with one command and behaves identically everywhere, while the world itself is kept safe in a persistent volume.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I built</h3>
+          <ul class="check-list">
+            <li>A Dockerised Minecraft server with a repeatable configuration</li>
+            <li>A volume so world data survives container restarts and upgrades</li>
+            <li>Port mapping so players can connect to the server</li>
+            <li>Settings such as memory limits kept in configuration, not in my head</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>How it works</h3>
+          <ol class="step-list">
+            <li>Pull or build the server image.</li>
+            <li>Start the container with the game port published and a data volume mounted.</li>
+            <li>Players connect to the host's address and port.</li>
+            <li>Stop, update or move the container without losing the world.</li>
+          </ol>
+        </article>
+
+        <article class="card reveal wide">
+          <h3>Example setup</h3>
+          <p>The general shape of the command, shown as an illustration. Replace with the exact configuration from your repository.</p>
+<pre><code>docker run -d --name minecraft \
+  -p 25565:25565 \
+  -v minecraft-data:/data \
+  -e EULA=TRUE \
+  itzg/minecraft-server</code></pre>
+        </article>
+
+        <article class="card reveal">
+          <h3>Skills &amp; tools</h3>
+          <ul class="chips">
+            <li>Docker</li><li>Volumes</li><li>Port mapping</li><li>Linux</li><li>Networking</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I learned</h3>
+          <p>Containers separate the application from the machine, which is what makes deployments repeatable. Persistent volumes taught me to treat data and the running container as two different things.</p>
+        </article>
+
+        <article class="card reveal wide">
+          <h3>Gallery</h3>
+          <p>Screenshots of the running server and the container setup.</p>
+          <div class="shots">
+            <div class="shot-placeholder">Add a screenshot of the server running in-game</div>
+            <div class="shot-placeholder">Add a screenshot of docker ps or your compose file</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-group proj-links">
+        <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub ↗</a>
+        <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+      </div>
+
+      <nav class="pager" aria-label="More projects">
+        <a href="project-fpga-counter.html" class="prev"><small>← Previous</small><strong>FPGA Binary Counter</strong></a>
+        <a href="project-nesso-dashboard.html" class="next"><small>Next →</small><strong>Nesso N1 Dashboard</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dorathan Lee Jun Lin</p>
+      <a href="../index.html" class="to-top">← Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

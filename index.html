@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dorathan Lee | AI & Data Engineer</title>
+  <meta name="description" content="Portfolio of an AI & Data Engineering student at Nanyang Polytechnic: machine learning, data pipelines and intelligent software." />
+  <meta name="theme-color" content="#f8fafc" />
+  <!-- Applies the saved theme (default: light) before first paint -->
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-mark">&lt;/&gt;</span> Dorathan Lee
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Home ===== -->
+    <section id="home" class="hero">
+      <div class="hero-glow glow-a" aria-hidden="true"></div>
+      <div class="hero-glow glow-b" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow reveal"><span class="dot"></span> Nanyang Polytechnic · AI &amp; Data Engineering</p>
+        <h1 class="reveal">Transforming <span class="gradient-text">Data</span> into <span class="gradient-text">Intelligent Solutions</span></h1>
+        <p class="lead reveal">
+          Hi, I'm <strong>Dorathan Lee</strong>, a diploma student who builds reliable data pipelines
+          and machine learning systems, from raw data to deployed insight.
+        </p>
+        <div class="cta-group reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <ul class="hero-stats reveal" aria-label="Highlights">
+          <li><strong>4</strong><span>Projects built</span></li>
+          <li><strong>3</strong><span>Core domains</span></li>
+          <li><strong>2028</strong><span>Graduating</span></li>
+        </ul>
+      </div>
+
+      <!-- Skills banner -->
+      <div class="skills-banner" aria-label="Key skills">
+        <div class="marquee">
+          <ul class="marquee-track">
+            <li>Python</li><li>SQL</li><li>Machine Learning</li><li>Data Analytics</li><li>Cloud Infrastructure</li>
+            <li>Python</li><li>SQL</li><li>Machine Learning</li><li>Data Analytics</li><li>Cloud Infrastructure</li>
+            <li aria-hidden="true">Python</li><li aria-hidden="true">SQL</li><li aria-hidden="true">Machine Learning</li><li aria-hidden="true">Data Analytics</li><li aria-hidden="true">Cloud Infrastructure</li>
+            <li aria-hidden="true">Python</li><li aria-hidden="true">SQL</li><li aria-hidden="true">Machine Learning</li><li aria-hidden="true">Data Analytics</li><li aria-hidden="true">Cloud Infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">01 / About</p>
+          <h2>Engineering intelligence, one pipeline at a time</h2>
+        </header>
+
+        <div class="about-grid">
+          <article class="card education reveal">
+            <h3>Academic Background</h3>
+            <div class="edu-item">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div>
+                <h4>Diploma in AI &amp; Data Engineering</h4>
+                <p class="muted">Nanyang Polytechnic, Singapore · 2024 – 2028</p>
+              </div>
+            </div>
+            <p>
+              A hands-on curriculum that blends data engineering, machine learning and software
+              development. Coursework and projects cover data modelling, big data processing,
+              deep learning, cloud services and MLOps fundamentals.
+            </p>
+            <ul class="check-list">
+              <li>Relevant modules: Data Structures &amp; Algorithms, Database Systems, Machine Learning, Cloud Computing</li>
+              <li>Capstone / final-year project: <em>add your project here</em></li>
+              <li>Achievements: <em>Director's List, hackathons, CCAs</em></li>
+            </ul>
+          </article>
+
+          <article class="card statement reveal">
+            <h3>Personal Statement</h3>
+            <p>
+              I believe good AI starts with good data. My engineering philosophy is to build
+              systems that are <strong>reproducible</strong>, <strong>observable</strong> and
+              <strong>simple enough to maintain</strong>, because a model is only as valuable as
+              the pipeline that keeps it fed and trusted.
+            </p>
+            <p>
+              I'm aiming for a career as a Data / ML Engineer, designing scalable platforms that
+              turn messy real-world data into decisions people can act on. I'm eager to keep learning,
+              collaborate across teams and contribute to impactful products.
+            </p>
+            <blockquote>“Make it work, make it right, make it measurable.”</blockquote>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal">Technical Stack</h3>
+        <div class="stack-grid">
+          <article class="card stack-card reveal">
+            <div class="stack-icon" aria-hidden="true">🔄</div>
+            <h4>Data Pipelines</h4>
+            <ul class="chips">
+              <li>SQL</li><li>Apache Airflow</li><li>Apache Spark</li><li>Kafka</li><li>dbt</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="card stack-card reveal">
+            <div class="stack-icon" aria-hidden="true">🧠</div>
+            <h4>ML / AI</h4>
+            <ul class="chips">
+              <li>Python</li><li>scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>OpenCV</li><li>Pandas</li>
+            </ul>
+          </article>
+          <article class="card stack-card reveal">
+            <div class="stack-icon" aria-hidden="true">🛠️</div>
+            <h4>Software Engineering</h4>
+            <ul class="chips">
+              <li>Git &amp; GitHub</li><li>Docker</li><li>AWS</li><li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">02 / Projects</p>
+          <h2>Selected work</h2>
+          <p class="muted">A mix of hardware, DevOps and dashboard builds. Filter by category, or open a project for the full write-up.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="hardware" aria-pressed="false">Hardware</button>
+          <button class="filter-btn" data-filter="devops" aria-pressed="false">Cloud &amp; DevOps</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Web &amp; IoT</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card reveal" data-category="hardware">
+            <div class="project-thumb thumb-1" aria-hidden="true">🔢</div>
+            <div class="project-body">
+              <span class="project-cat">Hardware</span>
+              <h3>FPGA Binary Counter</h3>
+              <p>A binary counter designed in hardware description language and implemented on an FPGA board, with the count shown on the board's LEDs.</p>
+              <ul class="tags"><li>FPGA</li><li>Verilog</li><li>Digital Logic</li></ul>
+              <div class="project-links">
+                <a href="Project/project-fpga-counter.html">View Details →</a>
+                <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="devops">
+            <div class="project-thumb thumb-2" aria-hidden="true">🐳</div>
+            <div class="project-body">
+              <span class="project-cat">Cloud &amp; DevOps</span>
+              <h3>Minecraft Docker</h3>
+              <p>A containerised Minecraft server deployed with Docker, with persistent world data and a repeatable setup that runs the same on any host.</p>
+              <ul class="tags"><li>Docker</li><li>Linux</li><li>Networking</li></ul>
+              <div class="project-links">
+                <a href="Project/project-minecraft-docker.html">View Details →</a>
+                <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb thumb-3" aria-hidden="true">📟</div>
+            <div class="project-body">
+              <span class="project-cat">Web &amp; IoT</span>
+              <h3>Nesso N1 Dashboard</h3>
+              <p>A dashboard that displays live data from the Nesso N1 device, turning raw readings into an easy-to-read interface.</p>
+              <ul class="tags"><li>IoT</li><li>JavaScript</li><li>Dashboard</li></ul>
+              <div class="project-links">
+                <a href="Project/project-nesso-dashboard.html">View Details →</a>
+                <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="hardware">
+            <div class="project-thumb thumb-4" aria-hidden="true">🧭</div>
+            <div class="project-body">
+              <span class="project-cat">Hardware</span>
+              <h3>Engineering Exploration Project</h3>
+              <p>A hands-on project exploring engineering fundamentals, from design and prototyping to testing and reflecting on the results.</p>
+              <ul class="tags"><li>Prototyping</li><li>Design</li><li>Teamwork</li></ul>
+              <div class="project-links">
+                <a href="Project/project-engineering-exploration.html">View Details →</a>
+                <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-kicker">03 / Contact</p>
+          <h2>Let's build something intelligent</h2>
+          <p class="lead">Open to internships, collaborations and conversations about data and AI.</p>
+          <div class="cta-group center">
+            <a href="mailto:241243U@mymail.nyp.edu.sg" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 6L2 7"/>
+              </svg>
+              Email Me
+            </a>
+            <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/dorathan-lee-149954416/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dorathan Lee Jun Lin</p>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

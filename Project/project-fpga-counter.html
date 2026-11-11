@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FPGA Binary Counter | Dorathan Lee</title>
+  <meta name="description" content="A binary counter written in a hardware description language and implemented on an FPGA board, with the count shown on LEDs." />
+  <meta name="theme-color" content="#f8fafc" />
+  <script src="../theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="../index.html#home" class="logo" aria-label="Home">
+        <span class="logo-mark">&lt;/&gt;</span> Dorathan Lee
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../settings.html" class="nav-link">Settings</a>
+        <a href="../index.html#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="project-page">
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">← All projects</a>
+
+      <header class="proj-hero">
+        <p class="section-kicker">Hardware</p>
+        <h1><span class="gradient-text">FPGA</span> Binary Counter</h1>
+        <p class="lead">A binary counter designed in a hardware description language and implemented on an FPGA board, with the running count displayed on the board's LEDs.</p>
+        <ul class="tags"><li>FPGA</li><li>Verilog</li><li>Digital Logic</li></ul>
+      </header>
+
+      <div class="proj-banner thumb-1" aria-hidden="true"><span>🔢</span></div>
+
+      <dl class="meta-grid">
+        <div class="meta-item"><dt>Category</dt><dd>Hardware</dd></div>
+        <div class="meta-item"><dt>Context</dt><dd>Passion Project</dd></div>
+        <div class="meta-item"><dt>Role</dt><dd>Designer &amp; implementer</dd></div>
+      </dl>
+
+      <div class="detail-grid">
+        <article class="card reveal wide">
+          <h3>Overview</h3>
+          <p>This project turns a simple idea, counting in binary, into real hardware. Instead of running software on a processor, the counter is described as digital logic, synthesised, and loaded onto an FPGA so that the physical LEDs light up in the pattern of the current count.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I built</h3>
+          <ul class="check-list">
+            <li>A counter module described in a hardware description language</li>
+            <li>A clock-division stage so the count is slow enough to see</li>
+            <li>Pin constraints mapping count bits to the board's LEDs</li>
+            <li>Simulation of the design before programming the board</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>How it works</h3>
+          <ol class="step-list">
+            <li>The board clock drives a counter register.</li>
+            <li>A divider slows the clock so each increment is visible.</li>
+            <li>Each bit of the register is wired to one LED.</li>
+            <li>The register wraps around to zero after its maximum value.</li>
+          </ol>
+        </article>
+
+        <article class="card reveal">
+          <h3>Skills &amp; tools</h3>
+          <ul class="chips">
+            <li>Verilog</li><li>FPGA toolchain</li><li>Simulation</li><li>Testbenches</li><li>Digital Logic</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I learned</h3>
+          <p>Hardware thinks in parallel: every part of the design runs at the same time. I also learned why clock timing and testing in simulation first save a lot of debugging on the board.</p>
+        </article>
+
+        <article class="card reveal wide">
+          <h3>Gallery</h3>
+          <p>Photos and screenshots of the board running and the simulation waveform.</p>
+          <div class="shots">
+            <div class="shot-placeholder">Add a photo of the FPGA board with LEDs lit</div>
+            <div class="shot-placeholder">Add the simulation waveform screenshot</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-group proj-links">
+        <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub ↗</a>
+        <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+      </div>
+
+      <nav class="pager" aria-label="More projects">
+        <a href="project-engineering-exploration.html" class="prev"><small>← Previous</small><strong>Engineering Exploration Project</strong></a>
+        <a href="project-minecraft-docker.html" class="next"><small>Next →</small><strong>Minecraft Docker</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dorathan Lee Jun Lin</p>
+      <a href="../index.html" class="to-top">← Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

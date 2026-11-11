@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings | Dorathan Lee</title>
+  <meta name="description" content="Site settings: switch between light and dark themes." />
+  <meta name="theme-color" content="#f8fafc" />
+  <!-- Applies the saved theme (default: light) before first paint -->
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="logo" aria-label="Home">
+        <span class="logo-mark">&lt;/&gt;</span> Dorathan Lee
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="settings.html" class="nav-link active" aria-current="page">Settings</a>
+        <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="settings-page">
+    <div class="container settings-wrap">
+      <header class="section-head">
+        <p class="section-kicker">Settings</p>
+        <h2>Preferences</h2>
+        <p class="muted">Changes apply instantly across every page and are remembered on this device.</p>
+      </header>
+
+      <section class="card" aria-labelledby="themeHeading">
+        <div class="setting-row">
+          <div>
+            <h3 id="themeHeading">Appearance</h3>
+            <p>Switch between a light and a dark theme.</p>
+            <span class="setting-state">Current theme: <span id="themeLabel">Light</span></span>
+          </div>
+          <label class="switch" for="themeToggle">
+            <span class="switch-icon" aria-hidden="true">☀️</span>
+            <input type="checkbox" id="themeToggle" role="switch" aria-label="Dark mode" />
+            <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+            <span class="switch-icon" aria-hidden="true">🌙</span>
+          </label>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dorathan Lee · Nanyang Polytechnic</p>
+      <a href="index.html" class="to-top">← Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

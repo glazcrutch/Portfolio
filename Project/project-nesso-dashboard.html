@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nesso N1 Dashboard | Dorathan Lee</title>
+  <meta name="description" content="A dashboard that displays live data from the Nesso N1 device as an easy-to-read interface." />
+  <meta name="theme-color" content="#f8fafc" />
+  <script src="../theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="../index.html#home" class="logo" aria-label="Home">
+        <span class="logo-mark">&lt;/&gt;</span> Dorathan Lee
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#projects" class="nav-link active" aria-current="page">Projects</a>
+        <a href="../settings.html" class="nav-link">Settings</a>
+        <a href="../index.html#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="project-page">
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">← All projects</a>
+
+      <header class="proj-hero">
+        <p class="section-kicker">Web &amp; IoT</p>
+        <h1>Nesso N1 <span class="gradient-text">Dashboard</span></h1>
+        <p class="lead">A dashboard that displays live data from the Nesso N1 device, turning raw readings into an easy-to-read interface.</p>
+        <ul class="tags"><li>IoT</li><li>TypeScript</li><li>Dashboard</li></ul>
+      </header>
+
+      <div class="proj-banner thumb-3" aria-hidden="true"><span>📟</span></div>
+
+      <dl class="meta-grid">
+        <div class="meta-item"><dt>Category</dt><dd>Web &amp; IoT</dd></div>
+        <div class="meta-item"><dt>Focus</dt><dd>Live data visualisation</dd></div>
+        <div class="meta-item"><dt>Role</dt><dd>Developer</dd></div>
+      </dl>
+
+      <div class="detail-grid">
+        <article class="card reveal wide">
+          <h3>Overview</h3>
+          <p>Devices produce numbers, but numbers on their own are hard to act on. This project connects to the Nesso N1 and presents its live readings in a clean dashboard, so the current state of the device can be understood at a glance.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I built</h3>
+          <ul class="check-list">
+            <li>A web dashboard that shows live readings from the device</li>
+            <li>A layout that separates headline values from detail</li>
+            <li>Automatic refresh so the display stays current</li>
+            <li>A responsive design that works on phone and desktop</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>How it works</h3>
+          <ol class="step-list">
+            <li>The device produces sensor or status readings.</li>
+            <li>The data is sent to the dashboard.</li>
+            <li>TypeScript updates the page as new values arrive.</li>
+            <li>The interface presents them as readable cards and indicators.</li>
+          </ol>
+        </article>
+
+        <article class="card reveal">
+          <h3>Skills &amp; tools</h3>
+          <ul class="chips">
+            <li>TypeScript</li><li>CSS</li><li>IoT</li><li>Data visualisation</li><li>Next.js &amp; Nest.js</li><li>Drizzle ORM</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>What I learned</h3>
+          <p>Live data introduces problems a static page never has, such as missing or late readings. Designing for those cases, and presenting data simply, mattered as much as getting it to appear.</p>
+        </article>
+
+        <article class="card reveal wide">
+          <h3>Gallery</h3>
+          <p>Screenshots of the dashboard and the device.</p>
+          <div class="shots">
+            <div class="shot-placeholder">Add a screenshot of the dashboard</div>
+            <div class="shot-placeholder">Add a photo of the Nesso N1 device</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-group proj-links">
+        <a href="https://github.com/glazcrutch" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub ↗</a>
+        <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+      </div>
+
+      <nav class="pager" aria-label="More projects">
+        <a href="project-minecraft-docker.html" class="prev"><small>← Previous</small><strong>Minecraft Docker</strong></a>
+        <a href="project-engineering-exploration.html" class="next"><small>Next →</small><strong>Engineering Exploration Project</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dorathan Lee Jun Lin</p>
+      <a href="../index.html" class="to-top">← Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
