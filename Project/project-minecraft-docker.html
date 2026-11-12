@@ -82,17 +82,28 @@
         <article class="card reveal wide">
           <h3>Example setup</h3>
           <p>The general shape of the command, shown as an illustration. Replace with the exact configuration from your repository.</p>
-<pre><code>docker run -d --name minecraft \
-  -p 25565:25565 \
-  -v minecraft-data:/data \
-  -e EULA=TRUE \
-  itzg/minecraft-server</code></pre>
+<pre><code>docker compose -f minecraft.yml -d</code></pre>
+<pre><code>services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "FORGE"
+      VERSION: "1.20.1"
+      MEMORY: "4G"
+      MAX_PLAYERS: "10"
+    volumes:
+      - ./data:/data
+    restart: "on-failure:3"</code></pre>
         </article>
 
         <article class="card reveal">
           <h3>Skills &amp; tools</h3>
           <ul class="chips">
-            <li>Docker</li><li>Volumes</li><li>Port mapping</li><li>Linux</li><li>Networking</li>
+            <li>Docker</li><li>Volumes</li><li>Port mapping</li><li>Networking</li>
           </ul>
         </article>
 
@@ -105,8 +116,8 @@
           <h3>Gallery</h3>
           <p>Screenshots of the running server and the container setup.</p>
           <div class="shots">
-            <div class="shot-placeholder">Add a screenshot of the server running in-game</div>
-            <div class="shot-placeholder">Add a screenshot of docker ps or your compose file</div>
+            <img class="shot-image" src="../Assests/Minecraft%20Docker/Gameplay.png" alt="Minecraft gameplay on the server" />
+            <img class="shot-image" src="../Assests/Minecraft%20Docker/Minecraft%20chart.png" alt="Minecraft server chart" />
           </div>
         </article>
       </div>
