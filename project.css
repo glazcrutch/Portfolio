@@ -41,6 +41,10 @@
   border-radius: 12px; border: 1.5px dashed var(--border); background: var(--surface);
   color: var(--muted); font-size: .9rem;
 }
+.shot-image, .shot-video {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: contain;
+  border-radius: 12px; border: 1px solid var(--border); background: var(--surface);
+}
 
 .proj-links { margin-top: 2rem; }
 
